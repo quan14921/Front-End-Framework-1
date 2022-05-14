@@ -1,29 +1,53 @@
+<!-- ng g c header --skip-tests -->
+<p>String: {{ productName }}</p>
+<p>Price: {{ productPrice }}</p>
+<p>Status: {{ productStatus }}</p>
+<p>Info: {{ productInfo.name }} - {{ productInfo.price }}</p>
+<p>List: ...</p>
+
+<form action="">
+  <input type="text" 
+  (keypress)="onHandleKeypress($event)"
+  value="{{title}}"
+  />
+  {{title}}
+</form>
+<br>
+<hr />
+<h2>NgModel</h2>
+
+<input type="text" [(ngModel)]="title" value="{{ title }}" />
+{{ title }} <br/>
+<!-- <form action="">
+  <input type="text" name="name" id="name"><br>
+  <input type="number" name="price" id="price"><br>
+  <select name="status" id="status"><br>
+    <option value="true">Còn Hàng</option>
+    <option value="false">Hết Hàng</option>
+  </select><br>
+</form> -->
+<button (click)="onHandleClick()">Click</button>
+<div *ngIf="productStatus">
 <table class="table">
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
+        <th scope="col">name</th>
+        <th scope="col">price</th>
+        <th scope="col">status</th>
+
+        <th scope="col">Delete</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2">Larry the Bird</td>
-        <td>@twitter</td>
+      <tr *ngFor="let product of ProductList1; let i = index">
+        <th scope="row">{{i + 1}}</th>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.status ? "còn Hàng" : "Hết hàng"}}</td>
+        <td>
+          <button class="btn btn-danger" (click)="onRemote(product.id)">Delete</button>
+        </td>
       </tr>
     </tbody>
   </table>
