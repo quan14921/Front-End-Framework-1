@@ -1,28 +1,19 @@
-<table class="table">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">name</th>
-        <th scope="col">price</th>
-        <th scope="col">status</th>
 
-        <th scope="col">Show</th>
-      </tr>
-    </thead>
+<table class="table table-bordered">
     <tbody>
-      <tr *ngFor="let products of ProductList; let i = index">
-        <th scope="row">{{i + 1}}</th>
-        <td>{{products.name}}</td>
-        <td>{{products.price}}</td>
-        <td>{{products.status ? "còn Hàng" : "Hết hàng"}}</td>
-        <td>
-          <button class="btn btn-danger" (click)="onShow(products.id)">Show</button>
-        </td>
-      </tr>
+        <tr *ngFor="let product of productList; let i = index">
+            <td>{{ i + 1 }}</td>
+            <td>{{ product.name }}</td>
+            <td>{{ product.price }}</td>
+            <td>
+                <button class="btn btn-info" routerLink="/products/{{ product.id }}">Info</button>
+                <button class="btn btn-primary ms-1" routerLink="/products/edit/{{ product.id }}">
+                    Edit
+                </button>
+                <button class="btn btn-danger ms-1" (click)="onRemoveItem(product.id!)">
+                    Remove
+                </button>
+            </td>
+        </tr>
     </tbody>
-  </table>
-  <div *ngIf="productDeail">
-    <td>{{productDeail.name}}</td>
-    <td>{{productDeail.price}}</td>
-</div>
-
+</table>

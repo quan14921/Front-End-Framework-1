@@ -1,0 +1,21 @@
+
+<h2>Đăng ký</h2>
+{{ user | json }}
+<form action="" (ngSubmit)="onSubmit()">
+   <div class="form-floating mb-3">
+    <input type="email" [(ngModel)]="user.email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" [(ngModel)]="user.username" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">User name</label>
+  </div>
+  
+  <div class="form-floating">
+    <input type="password" [(ngModel)]="user.password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div> 
+  <button>signup</button>
+</form>
+
+

@@ -1,27 +1,33 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { IProduct } from 'src/app/models/Product';
-
-
+import { Component, Input, OnInit } from '@angular/core';
+import { IProduct } from '../../models/Product';
+import { ProductService } from '../../services/product.service'
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  @Input('data') ProductList!: IProduct[];
-
-  productDeail!: IProduct;
-
-  constructor() { }
+  productList!: IProduct[];
+  constructor(private productService: ProductService) {
+    this.showProducts();
+  }
 
   ngOnInit(): void {
   }
 
-
-  onShow(id: number){
-    this.productDeail = this.ProductList.find(item => item.id === id)!;
-    console.log(this.productDeail);
-    
+  showProducts() {
+    this.productService.getProducts().subscribe(data => {
+      this.productList = data
+    })
+  }
+  onRemoveItem(id: number) {
+    // call api xoa
+    this.productService.removeProduct(id).subscribe(() => {
+      // reRender
+      this.productList = this.productList.filter(item => item.id !== id);
+    });
   }
 
 }
+// /product -> list
+// /product/:id -> detail

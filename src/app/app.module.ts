@@ -9,6 +9,12 @@ import { HeaderComponent } from './component/header/header.component';
 import { FormsModule } from '@angular/forms';
 import { ProductsComponent } from './component/products/products.component';
 import { ProductAddComponent } from './component/product-add/product-add.component';
+import { ProductDetailComponent } from './component/product-detail/product-detail.component';
+import { HttpClientModule } from '@angular/common/http';
+import { SignupComponent } from './component/signup/signup.component';
+import { LayoutsAdminComponent } from './layouts/layouts-admin/layouts-admin.component';
+import { LayoutsWedsiteComponent } from './layouts/layouts-wedsite/layouts-wedsite.component';
+import { SigninComponent } from './component/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +23,18 @@ import { ProductAddComponent } from './component/product-add/product-add.compone
     ProductComponent,
     HeaderComponent,
     ProductsComponent,
-    ProductAddComponent
+    ProductAddComponent,
+    ProductDetailComponent,
+    SignupComponent,
+    LayoutsAdminComponent,
+    LayoutsWedsiteComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],

@@ -1,5 +1,7 @@
-import { Component, EventEmitter, OnInit , Output} from '@angular/core';
-
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { IProduct } from 'src/app/models/Product';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-product-add',
@@ -7,19 +9,40 @@ import { Component, EventEmitter, OnInit , Output} from '@angular/core';
   styleUrls: ['./product-add.component.css']
 })
 export class ProductAddComponent implements OnInit {
-  @Output() onAdd = new EventEmitter()
-  product: {name: string , price: number} ={
+  product: IProduct = {
     name: "",
-    price: 0
+    price: 0,
+    status: true
   }
-  constructor() { }
+  constructor(private productService: ProductService, private router: Router,
+    private route: ActivatedRoute) {  }
 
   ngOnInit(): void {
-  }
-  onSubmit() {
-    console.log('submited')
-    console.log('this.product', this.product);
-    this.onAdd.emit(this.product)
+    const id = +this.route.snapshot.paramMap.get('id')!;
+    if(id){
+      this.productService.getProduct(id).subscribe(data => {
+        this.product = data
+    })
   }
 
-}
+  }
+  onSubmit() {
+    const id = +this.route.snapshot.paramMap.get('id')!;
+    if (id) {
+      this.productService.updateProduct(this.product).subscribe(data => {
+        setTimeout(() => {
+          // redirect về product list
+          this.router.navigateByUrl('/products');
+        }, 2000)
+      })
+    }
+
+    this.productService.addProduct(this.product).subscribe(data => {
+      console.log('Thêm thành công');
+      setTimeout(() => {
+        // redirect về product list
+        this.router.navigateByUrl('/products');
+      }, 2000)
+    })
+  }
+  }

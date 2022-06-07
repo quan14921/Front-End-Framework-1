@@ -1,0 +1,57 @@
+{
+  "products": [
+    {
+      "id": 6,
+      "name": "product B",
+      "price": 200,
+      "status": false
+    },
+    {
+      "id": 7,
+      "name": "product C",
+      "price": 200,
+      "status": false
+    },
+    {
+      "name": "áo nam thời trang 1",
+      "price": 123556,
+      "id": 8
+    },
+    {
+      "name": "áo nam thời trang 12",
+      "price": 234567678,
+      "id": 9
+    },
+    {
+      "name": "Sản phẩm AB",
+      "price": 789987654,
+      "id": 10
+    },
+    {
+      "name": "áo nam thời trang 12hd",
+      "price": 300000,
+      "status": true,
+      "id": 11
+    }
+  ],
+  "users": [
+    {
+      "email": "qyieuf@gmail.com.vn",
+      "password": "$2a$10$/GP88pK5zbakTICWZ4hYxOHx1zAFLRPB56JOxxL7BNbMmpBcplRc.",
+      "username": "quanthph",
+      "id": 1
+    },
+    {
+      "email": "tquan@gmail.com",
+      "password": "$2a$10$kjEhnv4n2L.RpxtokPY62exymGe1yA.JM6oeiW8bfWPalkVsU84la",
+      "username": "quanthph",
+      "id": 2
+    },
+    {
+      "email": "tquan123@gmail.com",
+      "password": "$2a$10$CoN3Ynb3ax/YS/EsoDyofuuvgMeeO06n6wLRf70l6UMmQI1IOaL32",
+      "username": "admin",
+      "id": 3
+    }
+  ]
+}

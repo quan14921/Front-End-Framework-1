@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import mockData from 'src/data';
 import { IProduct } from './models/Product';
 
 @Component({
@@ -7,25 +8,15 @@ import { IProduct } from './models/Product';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
-  productList: IProduct[] = [
-    {
-      id: 1,
-      name: "product A",
-      price: 200,
-      status: false
-    },
-    {
-      id: 2,
-      name: "product B",
-      price: 300,
-      status: true
-    }
-  ]
-
-  onhandleAdd(product: any){
-    console.log('product', product);
+  productList: IProduct[] = mockData;
+  onHandleAdd(product: any) {
+    console.log('prduct', product);
     this.productList.push(product);
-    
   }
+
+  // onhandleAdd(product: any){
+  //   console.log('product', product);
+  //   this.productList.push(product);
+    
+  // }
 }
