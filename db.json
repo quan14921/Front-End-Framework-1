@@ -6,31 +6,35 @@
       "image": "Rectangle 4@2x.png",
       "categoryPostId": " Dashboard",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "desc": "Ngày nay áo thun nam tay lỡ được coi là món đồ \\\" Must have \\\" trong tủ đồ của các tín đồ về thời trang. Càng ngày những chiếc áo thun nam tay lỡ unisex càng được chăm chút hơn về hình ảnh với nhiều mẫu mã và màu sắc đa dạng hơn và những thiết kế đặc sắc, bắt mắt hơn thậm chí còn bắt kịp nhiều trào lưu xu hướng đặc biệt là phong cách của đất nước kim chi - Hàn Quốc.\\n2s Clothing thấu hiểu được những vấn đề này và sẽ liên tục cập nhật các mẫu áo thun nam tay lỡ unisex mới nhất giúp các bạn có thể có nhiều sự lựa chọn."
+      "desc": "Ngày nay áo thun nam tay lỡ được coi là món đồ \\\" Must have \\\" trong tủ đồ của các tín đồ về thời trang. Càng ngày những chiếc áo thun nam tay lỡ unisex càng được chăm chút hơn về hình ảnh với nhiều mẫu mã và màu sắc đa dạng hơn và những thiết kế đặc sắc, bắt mắt hơn thậm chí còn bắt kịp nhiều trào lưu xu hướng đặc biệt là phong cách của đất nước kim chi - Hàn Quốc.\\n2s Clothing thấu hiểu được những vấn đề này và sẽ liên tục cập nhật các mẫu áo thun nam tay lỡ unisex mới nhất giúp các bạn có thể có nhiều sự lựa chọn.",
+      "createAt": "2022-06-12"
     },
     {
       "title": "Making a design system from scratch",
       "image": "Rectangle 40.png",
       "categoryPostId": "3",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "desc": "54657hgfbdettet",
-      "id": 3
+      "desc": "Another advantage of shopping at our dealership is that we give you the option of purchasing your next car online. You don't have to wait in long lines or deal with tedious paperwork to drive home in a new car at our dealership. Instead, you can complete the entire process right from home. You can start by getting pre-approved for vehicle financing, allowing you to buy a car more quickly. You can even settle on the car you want and close the deal with the simple click of your mouse or swipe of your finger using a smartphone. If you want more information, our online resources are a click away to help.",
+      "id": 3,
+      "createAt": "2022-06-12"
     },
     {
-      "title": "Making a design system from scratch",
+      "title": "Making a design system from scratch 1",
       "image": "Rectangle 34.jpg",
       "categoryPostId": "3",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "desc": "54657hgfbdettet",
-      "id": 4
+      "desc": "54657hgfbdettetAnother advantage of shopping at our dealership is that we give you the option of purchasing your next car online. You don't have to wait in long lines or deal with tedious paperwork to drive home in a new car at our dealership. Instead, you can complete the entire process right from home. You can start by getting pre-approved for vehicle financing, allowing you to buy a car more quickly. You can even settle on the car you want and close the deal with the simple click of your mouse or swipe of your finger using a smartphone. If you want more information, our online resources are a click away to help.",
+      "id": 4,
+      "createAt": "2022-06-12"
     },
     {
-      "title": "Making a design system from scratch",
+      "title": "Making a design system from scratch 2",
       "image": "Rectangle 34.jpg",
       "categoryPostId": "3",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "desc": "sản phẩm chất lượng cao",
-      "id": 5
+      "desc": "Another advantage of shopping at our dealership is that we give you the option of purchasing your next car online. You don't have to wait in long lines or deal with tedious paperwork to drive home in a new car at our dealership. Instead, you can complete the entire process right from home. You can start by getting pre-approved for vehicle financing, allowing you to buy a car more quickly. You can even settle on the car you want and close the deal with the simple click of your mouse or swipe of your finger using a smartphone. If you want more information, our online resources are a click away to help.",
+      "id": 5,
+      "createAt": "2022-06-12"
     }
   ],
   "works": [
@@ -38,36 +42,64 @@
       "title": "Designing Dashboards",
       "image": "Rectangle 30.jpg",
       "createAt": "2022-12-06",
-      "categoryPostId": " Dashboard",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
       "desc": "Ngày nay áo thun nam tay lỡ được coi là món đồ \" Must have \" trong tủ đồ của các tín đồ về thời trang. Càng ngày những chiếc áo thun nam tay lỡ unisex càng được chăm chút hơn về hình ảnh với nhiều mẫu mã và màu sắc đa dạng hơn và những thiết kế đặc sắc, bắt mắt hơn thậm chí còn bắt kịp nhiều trào lưu xu hướng đặc biệt là phong cách của đất nước kim chi - Hàn Quốc.2s Clothing thấu hiểu được những vấn đề này và sẽ liên tục cập nhật các mẫu áo thun nam tay lỡ unisex mới nhất giúp các bạn có thể có nhiều sự lựa chọn.",
-      "id": 1
+      "id": 1,
+      "categoryWorkId": "Dashboards"
     },
     {
       "title": "Vibrant Portraits of 2020",
       "image": "Rectangle 32.jpg",
       "createAt": "2022-12-06",
-      "categoryPostId": "Illustration",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "desc": "day la mo ta 1",
-      "id": 2
+      "desc": "day la mo ta 1Another advantage of shopping at our dealership is that we give you the option of purchasing your next car online. You don't have to wait in long lines or deal with tedious paperwork to drive home in a new car at our dealership. Instead, you can complete the entire process right from home. You can start by getting pre-approved for vehicle financing, allowing you to buy a car more quickly. You can even settle on the car you want and close the deal with the simple click of your mouse or swipe of your finger using a smartphone. If you want more information, our online resources are a click away to help.",
+      "id": 2,
+      "categoryWorkId": "Illustration"
     },
     {
       "title": "36 Days of Malayalam type ",
       "image": "Rectangle 34.jpg",
       "createAt": "2022-06-12",
-      "categoryPostId": "Typography",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "desc": "sản phẩm chất lượng cao",
-      "id": 3
+      "desc": "Another advantage of shopping at our dealership is that we give you the option of purchasing your next car online. You don't have to wait in long lines or deal with tedious paperwork to drive home in a new car at our dealership. Instead, you can complete the entire process right from home. You can start by getting pre-approved for vehicle financing, allowing you to buy a car more quickly. You can even settle on the car you want and close the deal with the simple click of your mouse or swipe of your finger using a smartphone. If you want more information, our online resources are a click away to help.",
+      "id": 3,
+      "categoryWorkId": "Typography"
     },
     {
       "title": "Components",
       "image": "Rectangle 40.png",
-      "createAt": "",
-      "categoryPostId": "Components, Design",
+      "createAt": "2022-06-12",
       "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-      "desc": "day la mo ta 7",
+      "desc": "Another advantage of shopping at our dealership is that we give you the option of purchasing your next car online. You don't have to wait in long lines or deal with tedious paperwork to drive home in a new car at our dealership. Instead, you can complete the entire process right from home. You can start by getting pre-approved for vehicle financing, allowing you to buy a car more quickly. You can even settle on the car you want and close the deal with the simple click of your mouse or swipe of your finger using a smartphone. If you want more information, our online resources are a click away to help.",
+      "id": 4,
+      "categoryWorkId": "Components, Design"
+    }
+  ],
+  "categoryPostId": [
+    {
+      "name": "Dashboard",
+      "id": 1
+    },
+    {
+      "name": "Figma, Icon Design",
+      "id": 2
+    }
+  ],
+  "categoryWorkId": [
+    {
+      "name": "Components, Design",
+      "id": 1
+    },
+    {
+      "name": "Typography",
+      "id": 2
+    },
+    {
+      "name": "Illustration",
+      "id": 3
+    },
+    {
+      "name": "Dashboards",
       "id": 4
     }
   ],

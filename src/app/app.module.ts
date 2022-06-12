@@ -17,6 +17,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
 import { ListworkComponent } from './components/admin/works/listwork/listwork.component';
 import { AddworkComponent } from './components/admin/works/addwork/addwork.component';
+import { ListcateblogComponent } from './components/admin/blog/listcateblog/listcateblog.component';
+import { AddcateblogComponent } from './components/admin/blog/addcateblog/addcateblog.component';
+import { ListcateworkComponent } from './components/admin/works/listcatework/listcatework.component';
+import { AddcateworkComponent } from './components/admin/works/addcatework/addcatework.component';
+import { WorkdeatilComponent } from './components/workdeatil/workdeatil.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +37,12 @@ import { AddworkComponent } from './components/admin/works/addwork/addwork.compo
     AddComponent,
     HeaderAdminComponent,
     ListworkComponent,
-    AddworkComponent
+    AddworkComponent,
+    ListcateblogComponent,
+    AddcateblogComponent,
+    ListcateworkComponent,
+    AddcateworkComponent,
+    WorkdeatilComponent
   ],
   imports: [
     BrowserModule,

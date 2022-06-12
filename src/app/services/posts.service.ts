@@ -9,6 +9,7 @@ import { IProduct } from '../models/posts';
 })
 export class PostsService {
   API_URL: string = 'http://localhost:3001/posts';
+  API_LIMIT : string = 'http://localhost:3001/posts?_limit=2'
 
   constructor(private http: HttpClient) { }
 
@@ -17,6 +18,9 @@ export class PostsService {
   }
   getPosts(): Observable<IProduct[]> {
     return this.http.get<IProduct[]>(this.API_URL)
+  }
+  getPolimit(): Observable<IProduct[]> {
+    return this.http.get<IProduct[]>(this.API_LIMIT)
   }
   removePosts(id: number): Observable<IProduct> {
     return this.http.delete<IProduct>(`${this.API_URL}/${id}`)

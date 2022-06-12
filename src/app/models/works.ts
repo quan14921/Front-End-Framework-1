@@ -3,7 +3,7 @@ export interface IWork {
     title: string,
     image: string,
     createAt : string,
-    categoryPostId: string,
+    categoryWorkId: string,
     short_desc:string,
     desc:string
 }

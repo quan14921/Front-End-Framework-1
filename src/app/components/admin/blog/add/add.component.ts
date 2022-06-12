@@ -12,7 +12,7 @@ export class AddComponent implements OnInit {
   posts:IProduct = {
     title: "",
     image: "",
-    // createAt: "",
+    createAt: "",
     categoryPostId: "",
     short_desc:"",
     desc:""
@@ -37,7 +37,7 @@ onSubmit() {
       setTimeout(() => {
         // redirect về product list
         this.router.navigateByUrl('/admin/blog');
-      }, 2000)
+      }, 200)
     })
   }
   this.postsService.addPosts(this.posts).subscribe(data => {
@@ -45,7 +45,7 @@ onSubmit() {
     setTimeout(() => {
       // redirect về product list
       this.router.navigateByUrl('/admin/blog');
-    }, 2000)
+    }, 200)
   })
 
 }

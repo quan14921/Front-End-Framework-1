@@ -13,7 +13,7 @@ export class AddworkComponent implements OnInit {
     title: "",
     image: "",
     createAt: "",
-    categoryPostId: "",
+    categoryWorkId: "",
     short_desc: "",
     desc: ""
   }

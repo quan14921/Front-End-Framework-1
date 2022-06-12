@@ -3,68 +3,19 @@
         <div class="work-title">
             <p>Work</p>
         </div>
-        <div class="row-1">
+        <div class="row-1"  *ngFor="let posts of Worklisst">
             <div class="col-1">
-                <img src="https://webapphuddle.com/wp-content/uploads/2015/01/6.ipad_dashboard.jpg" alt="" class="image">
+                <img src="./assets/img/{{ posts.image }}" alt="" class="image">
                 <div class="text-content">
                     <h3 class="text-heading">
-                        <a href=""> Designing Dashboards</a>
+                        <a href=""> {{ posts.title }}</a>
                     </h3>
                     <div class="date_category">
-                        <span class="date">2020</span>
-                        <span class="category">Dashboard</span>
+                        <span class="date">{{ posts.createAt }}</span>
+                        <span class="category">{{ posts.categoryWorkId }}</span>
                     </div>
                     <p class="text-desc">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                </div>
-            </div>
-            <div class="col-1">
-                <img src="https://i.pinimg.com/originals/2c/69/76/2c6976981cf8e61d81db80cc5c6d6c00.jpg" alt="" class="image">
-                <div class="text-content">
-                    <h3 class="text-heading">
-                        <a href="">Vibrant Portraits of 2020</a>
-                    </h3>
-                    <div class="date_category">
-                        <span class="date">2018</span>
-                        <span class="category">Illustration</span>
-                    </div>
-                    <p class="text-desc">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                </div>
-            </div>
-            <div class="col-1">
-                <img src="https://i.pinimg.com/originals/ab/c9/19/abc9191ef517f92ea89a9a867669edd4.jpg" alt="" class="image">
-                <div class="text-content">
-                    <h3 class="text-heading">
-                        <a href="">36 Days of Malayalam type</a>
-                    </h3>
-                    <div class="date_category">
-                        <span class="date">2018</span>
-                        <span class="category">Typography</span>
-                    </div>
-                    <p class="text-desc">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                </div>
-            </div>
-            <div class="col-1">
-                <img src="https://st3.depositphotos.com/1000618/17476/v/1600/depositphotos_174761094-stock-illustration-vector-infographic-basic-components-business.jpg" alt="" class="image">
-                <div class="text-content">
-                    <h3 class="text-heading">
-                        <a href="">Components</a>
-                    </h3>
-                    <div class="date_category">
-                        <span class="date">2018</span>
-                        <span class="category">Components, Design</span>
-                    </div>
-                    <p class="text-desc">
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                        {{ posts.short_desc }}
                     </p>
                 </div>
             </div>

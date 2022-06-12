@@ -1,0 +1,18 @@
+<section>
+    <div class="container">
+        <div class="main-information">
+            <h1 class="title">{{ Worklist.title }}</h1>
+            <div class="date_category">
+                <span class="date">{{ Worklist.createAt }}</span>
+                <span class="category">{{ Worklist.categoryWorkId }}</span>
+            </div>
+            <p class="desc">{{ Worklist.short_desc }}</p>
+            <img src="./assets/img/{{ Worklist.image}}" alt="">
+        </div>
+
+        <div class="information">
+            <p class="desc">{{ Worklist.desc }}</p>
+
+        </div>
+    </div>
+</section>

@@ -15,7 +15,7 @@
         <th>{{ i + 1 }}</th>
         <td>{{ posts.title }}</td>
         <td><img src="./assets/img/{{ posts.image }}" alt=""></td>
-        <!-- <td>{{ posts.createAt }}</td> -->
+        <td>{{ posts.createAt }}</td>
         <td>{{ posts.categoryPostId }}</td>
         <td>{{ posts.short_desc }}</td>
         <td>{{ posts.desc }}</td>
@@ -33,8 +33,11 @@
     </tbody>
   </table>
   <div class="add">
-    <button class="btn btn-primary" routerLink="/admin/blog/add">
+    <button class="btn btn-primary ms-1" routerLink="/admin/blog/add">
       Thêm Post
   </button>
+  <button class="btn btn-primary ms-1" routerLink="/admin/blog/cate">
+    Xem Danh Mục
+</button>
   </div>
   

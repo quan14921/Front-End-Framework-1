@@ -5,7 +5,7 @@
         <th scope="col">Title</th>
         <th scope="col">Image</th>
         <th scope="col">createAt</th>
-        <th scope="col">CategoryPostId</th>
+        <th scope="col">categoryWorkId</th>
         <th scope="col"> Short desc</th>
         <th scope="col">Desc</th>
       </tr>
@@ -16,7 +16,7 @@
         <td>{{ posts.title }}</td>
         <td><img src="./assets/img/{{ posts.image }}" alt=""></td>
         <td>{{ posts.createAt }}</td>
-        <td>{{ posts.categoryPostId }}</td>
+        <td>{{ posts.categoryWorkId }}</td>
         <td>{{ posts.short_desc }}</td>
         <td>{{ posts.desc }}</td>
         <td>
@@ -36,5 +36,8 @@
     <button class="btn btn-primary" routerLink="/admin/work/add">
       Thêm Post
   </button>
+  <button class="btn btn-primary ms-1" routerLink="/admin/work//cate">
+    Xem Danh Mục
+</button>
   </div>
   
