@@ -1,14 +1,12 @@
 <section>
     <div class="container">
         <div class="introduce">
-            <div class="about">
+            <div class="about" *ngFor="let x of Userlist">
                 <h1 class="name">
-                    Hi, I am Quân ,
+                    Hi, I am <span>{{x.name}}</span>  ,
                 </h1>
-                <h1 class="job-position">Creative Technologist</h1>
-                <p class="desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
-                    consequat
-                    duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                <h1 class="job-position">{{x.position}}</h1>
+                <p class="desc">{{x.about}}
                 </p>
                 <button class="button-download">Download Resume</button>
             </div>
@@ -35,7 +33,7 @@
 
             <div class="row" *ngFor="let posts of PostsList">
                 <div class="col">
-                    <h3 class="heading-blog"><a href="">{{ posts.title }}</a></h3>
+                    <h3 class="heading-blog"><a href="Blogpage/{{ posts.id }}">{{ posts.title }}</a></h3>
                     <div class="date-category">
                         <span class="date">
                             {{ posts.createAt }}

@@ -9,6 +9,7 @@ import { AddworkComponent } from './components/admin/works/addwork/addwork.compo
 import { ListcateworkComponent } from './components/admin/works/listcatework/listcatework.component';
 import { ListworkComponent } from './components/admin/works/listwork/listwork.component';
 import { BlogComponent } from './components/blog/blog.component';
+import { BlogdetailComponent } from './components/blogdetail/blogdetail.component';
 import { HomeComponent } from './components/home/home.component';
 import { WorkdeatilComponent } from './components/workdeatil/workdeatil.component';
 import { WorksComponent } from './components/works/works.component';
@@ -25,7 +26,10 @@ const routes: Routes = [
       path: "", component: HomeComponent
     },
     {
-      path: "Blogpage", component: BlogComponent
+      path: "Blogpage", children:[
+        {path:"", component: BlogComponent},
+        {path:":id", component: BlogdetailComponent}
+      ]
     },
     {
       path: "Workspage", children:[

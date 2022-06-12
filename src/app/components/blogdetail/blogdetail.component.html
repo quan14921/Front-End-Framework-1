@@ -1,0 +1,18 @@
+<section>
+    <div class="container">
+        <div class="main-information">
+            <h1 class="title">{{ Bloglist.title }}</h1>
+            <div class="date_category">
+                <span class="date">{{ Bloglist.createAt }}</span>
+                <span class="category">{{ Bloglist.categoryPostId }}</span>
+            </div>
+            <p class="desc">{{ Bloglist.short_desc }}</p>
+            <img src="./assets/img/{{ Bloglist.image}}" alt="">
+        </div>
+
+        <div class="information">
+            <p class="desc">{{ Bloglist.desc }}</p>
+
+        </div>
+    </div>
+</section>

@@ -22,6 +22,7 @@ import { AddcateblogComponent } from './components/admin/blog/addcateblog/addcat
 import { ListcateworkComponent } from './components/admin/works/listcatework/listcatework.component';
 import { AddcateworkComponent } from './components/admin/works/addcatework/addcatework.component';
 import { WorkdeatilComponent } from './components/workdeatil/workdeatil.component';
+import { BlogdetailComponent } from './components/blogdetail/blogdetail.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { WorkdeatilComponent } from './components/workdeatil/workdeatil.componen
     AddcateblogComponent,
     ListcateworkComponent,
     AddcateworkComponent,
-    WorkdeatilComponent
+    WorkdeatilComponent,
+    BlogdetailComponent
   ],
   imports: [
     BrowserModule,

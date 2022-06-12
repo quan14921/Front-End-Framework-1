@@ -5,21 +5,18 @@ import { Observable } from 'rxjs';
 import { Usertype } from '../models/User';
 
 
-const urlAPI  = 'http://localhost:3001/'
+
 @Injectable({
     providedIn:'root'
 })
  export class UserService {
-
+API_URL: string = 'http://localhost:3001/users';
      constructor(private http: HttpClient) { }
 
-    singup(user: any) {
-    console.log(user);
-        
-    return this.http.post(`${urlAPI}/signup`, user);
+      getUserss(): Observable<Usertype[]> {
+        return this.http.get<Usertype[]>(this.API_URL)
       }
-
-    signIn(user:any) {
-        return this.http.post(`${urlAPI}/signin`,user);
-    }
+      updateUsers(posts: Usertype) {
+        return this.http.put<Usertype>(`${this.API_URL}/${posts.id}`, posts);
+      }
  }

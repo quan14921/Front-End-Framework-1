@@ -104,23 +104,13 @@
     }
   ],
   "users": [
-    {
-      "email": "qyieuf@gmail.com.vn",
-      "password": "$2a$10$/GP88pK5zbakTICWZ4hYxOHx1zAFLRPB56JOxxL7BNbMmpBcplRc.",
-      "username": "quanthph",
-      "id": 1
-    },
-    {
-      "email": "tquan@gmail.com",
-      "password": "$2a$10$kjEhnv4n2L.RpxtokPY62exymGe1yA.JM6oeiW8bfWPalkVsU84la",
-      "username": "quanthph",
-      "id": 2
-    },
-    {
-      "email": "tquan123@gmail.com",
-      "password": "$2a$10$CoN3Ynb3ax/YS/EsoDyofuuvgMeeO06n6wLRf70l6UMmQI1IOaL32",
-      "username": "admin",
-      "id": 3
-    }
+   {
+    "id": 1,
+    "name": "Quan",
+    "img" : "https://i.ibb.co/JpnWg5D/anh.jpg",
+    "position": "Fron-End Developer",
+    "about" : "I love coding and the challenge of learning something new every day. My goal is to pursue a career in front-end development.",
+    "cv" : ""
+   }
   ]
 }
