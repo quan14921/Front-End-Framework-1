@@ -14,6 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ListComponent } from './components/admin/blog/list/list.component';
 import { AddComponent } from './components/admin/blog/add/add.component';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderAdminComponent } from './components/header-admin/header-admin.component';
+import { ListworkComponent } from './components/admin/works/listwork/listwork.component';
+import { AddworkComponent } from './components/admin/works/addwork/addwork.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { HttpClientModule } from '@angular/common/http';
     WorksComponent,
     FooterComponent,
     ListComponent,
-    AddComponent
+    AddComponent,
+    HeaderAdminComponent,
+    ListworkComponent,
+    AddworkComponent
   ],
   imports: [
     BrowserModule,

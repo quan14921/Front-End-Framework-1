@@ -1,0 +1,40 @@
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Title</th>
+        <th scope="col">Image</th>
+        <th scope="col">createAt</th>
+        <th scope="col">CategoryPostId</th>
+        <th scope="col"> Short desc</th>
+        <th scope="col">Desc</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let posts of Worklist; let i = index">
+        <th>{{ i + 1 }}</th>
+        <td>{{ posts.title }}</td>
+        <td><img src="./assets/img/{{ posts.image }}" alt=""></td>
+        <td>{{ posts.createAt }}</td>
+        <td>{{ posts.categoryPostId }}</td>
+        <td>{{ posts.short_desc }}</td>
+        <td>{{ posts.desc }}</td>
+        <td>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button class="btn btn-primary ms-1" routerLink="/admin/work/edit/{{ posts.id }}">
+              Edit
+          </button>
+          <button class="btn btn-danger ms-1" (click)="onRemoveItem(posts.id!)">
+            Remove
+        </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="add">
+    <button class="btn btn-primary" routerLink="/admin/work/add">
+      Thêm Post
+  </button>
+  </div>
+  

@@ -21,13 +21,13 @@ export class PostsService {
   removePosts(id: number): Observable<IProduct> {
     return this.http.delete<IProduct>(`${this.API_URL}/${id}`)
   }
-  addPosts(product: any): Observable <IProduct> {
-    console.log(product);
+  addPosts(posts: any): Observable <IProduct> {
+    console.log(posts);
     
-    return this.http.post<IProduct>(`${this.API_URL}`, product);
+    return this.http.post<IProduct>(`${this.API_URL}`, posts);
   }
-  updatePosts(product: IProduct) {
-    return this.http.put<IProduct>(`${this.API_URL}/${product.id}`, product);
+  updatePosts(posts: IProduct) {
+    return this.http.put<IProduct>(`${this.API_URL}/${posts.id}`, posts);
   }
 }
 /**
