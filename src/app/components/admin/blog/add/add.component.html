@@ -1,0 +1,29 @@
+<h2>Thêm sản Phẩm</h2>
+{{ posts | json }}
+<form action="" (ngSubmit)="onSubmit()">
+<div class="form-floating mb-3">
+    <input type="text" [(ngModel)]="posts.title" class="form-control" id="floatingInput" placeholder="title" name="title">
+    <label for="floatingInput">title</label>
+  </div>
+  <div class="form-floating">
+    <input type="text" [(ngModel)]="posts.image" class="form-control" id="floatingPassword" placeholder="image" name="image">
+    <label for="floatingPassword">image</label>
+  </div>
+  <!-- <div class="form-floating mb-3">
+    <input type="date" [(ngModel)]="posts.createAt" class="form-control" id="floatingInput" placeholder="createAt" name="createAt">
+    <label for="floatingInput">createAt</label>
+  </div> -->
+  <div class="form-floating">
+    <input type="text" [(ngModel)]="posts.categoryPostId" class="form-control" id="floatingPassword" placeholder="categoryPostId" name="categoryPostId">
+    <label for="floatingPassword">categoryPostId</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="text" [(ngModel)]="posts.short_desc" class="form-control" id="floatingInput" placeholder="short desc" name="short_desc">
+    <label for="floatingInput">short desc</label>
+  </div>
+  <div class="form-floating">
+    <input type="text" [(ngModel)]="posts.desc" class="form-control" id="floatingPassword" placeholder="desc" name="desc">
+    <label for="floatingPassword">desc</label>
+  </div>
+  <button  class="btn btn-primary">Thêm</button>
+</form>

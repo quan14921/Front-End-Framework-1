@@ -1,0 +1,17 @@
+footer{
+    padding: 50px;
+  }
+  .icon{
+    display: flex;
+    justify-content: center;
+  }
+  .icon img{
+    max-width: 70px;
+    padding: 0 15px;
+  }
+  .footer-botton{
+    text-align: center;
+    font-size: 14px;
+    margin-top: 28px;
+  }
+  

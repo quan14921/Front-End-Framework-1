@@ -1,0 +1,138 @@
+
+a{
+  text-decoration: none;
+}
+.container{
+  width: 800px;
+  margin: 0 auto;
+  
+}
+.about{
+    width: 506px;
+  }
+.top-nav ul {
+      display: flex;    
+      justify-content: center;
+    }
+.top-nav ul li{
+    list-style: none;
+    padding: 0 20px;
+  }
+.top-nav a{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+.img{
+     max-width: 247px;
+     border-radius: 1000px;
+  }
+.introduce{
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: 506px auto;
+    margin-top: 150px;
+   
+  }
+.introduce .name, .job-position {
+    font-size: 44px;
+    color: #21243D;
+    font-weight: bold;
+  }
+.introduce .desc{
+    margin: 40px 0;
+    color: #21243D;
+    font-size: 16px;
+  }
+.introduce .about .button-download{
+    background-color: #FF6464;
+    padding: 15px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+    border: #FF6464;
+  }
+  
+.recent-blog{
+    width: 100%;
+    background-color: #EDF7FA;
+    padding: 29px 0;
+    margin-top: 75px;
+  }
+  
+  
+.blog> div {
+    display: flex;
+    justify-content: space-between;
+  }
+.view-all a {
+    text-decoration: none;
+    color: #00A8CC;
+    font-size: 16px;
+  }
+.title-post {
+    font-size: 22px;
+  }
+  
+.col{
+    background-color: #fff;
+    padding: 25px;
+    margin: 25px 0;
+    width: 418px;
+    border-radius: 4x;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  
+  }
+.col .heading-blog{
+    font-size: 26px;
+  }
+.col a{
+    text-decoration: none;
+    color: #21243D;
+  }
+.col .date-category{
+    margin: 40px 0;
+  }
+.work-title {
+    font-size: 22px;
+  }
+.col-1 {
+    display: grid;
+    grid-template-columns: 246px 594px;
+    grid-gap: 18px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 15px;
+    padding-top: 30px;
+  }
+.row-1 .text-heading {
+    font-size: 30px;  }
+.row-1 .date {
+    font-size: 18px;
+  }
+.row-1  .category{
+    font-size: 20px;
+  }
+.row-1 .text-desc {
+    font-size: 16px;
+  }
+.col-1 .image {
+    width: 100%;
+  }
+.col-1 .date_category {
+    margin: 19px 0;
+  }
+.col-1 .date{
+    background-color: #142850;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 16px;
+    padding: 2px 10px;
+    margin-right: 25px;
+  }
+.row-1 .text-heading a {
+      text-decoration: none;
+      color: #000;
+  }

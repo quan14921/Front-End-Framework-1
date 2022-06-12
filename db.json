@@ -1,37 +1,36 @@
 {
-  "products": [
+  "posts": [
     {
-      "id": 6,
-      "name": "product B",
-      "price": 200,
-      "status": false
+      "id": 1,
+      "title": "qqrerewr",
+      "image": "Rectangle 4@2x.png",
+      "categoryPostId": "3",
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "Ngày nay áo thun nam tay lỡ được coi là món đồ \\\" Must have \\\" trong tủ đồ của các tín đồ về thời trang. Càng ngày những chiếc áo thun nam tay lỡ unisex càng được chăm chút hơn về hình ảnh với nhiều mẫu mã và màu sắc đa dạng hơn và những thiết kế đặc sắc, bắt mắt hơn thậm chí còn bắt kịp nhiều trào lưu xu hướng đặc biệt là phong cách của đất nước kim chi - Hàn Quốc.\\n2s Clothing thấu hiểu được những vấn đề này và sẽ liên tục cập nhật các mẫu áo thun nam tay lỡ unisex mới nhất giúp các bạn có thể có nhiều sự lựa chọn."
     },
     {
-      "id": 7,
-      "name": "product C",
-      "price": 200,
-      "status": false
+      "title": "Making a design system from scratch",
+      "image": "Rectangle 40.png",
+      "categoryPostId": "3",
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "54657hgfbdettet",
+      "id": 3
     },
     {
-      "name": "áo nam thời trang 1",
-      "price": 123556,
-      "id": 8
+      "title": "Making a design system from scratch",
+      "image": "Rectangle 34.jpg",
+      "categoryPostId": "3",
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "54657hgfbdettet",
+      "id": 4
     },
     {
-      "name": "áo nam thời trang 12",
-      "price": 234567678,
-      "id": 9
-    },
-    {
-      "name": "Sản phẩm AB",
-      "price": 789987654,
-      "id": 10
-    },
-    {
-      "name": "áo nam thời trang 12hd",
-      "price": 300000,
-      "status": true,
-      "id": 11
+      "title": "Making a design system from scratch",
+      "image": "Rectangle 34.jpg",
+      "categoryPostId": "3",
+      "short_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
+      "desc": "54657hgfbdettet",
+      "id": 5
     }
   ],
   "users": [

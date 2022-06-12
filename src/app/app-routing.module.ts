@@ -1,27 +1,33 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProductAddComponent } from './component/product-add/product-add.component';
-import { ProductDetailComponent } from './component/product-detail/product-detail.component';
-import { ProductComponent } from './component/product/product.component';
-import { ProductsComponent } from './component/products/products.component';
-import { SigninComponent } from './component/signin/signin.component';
-import { SignupComponent } from './component/signup/signup.component';
+import { AddComponent } from './components/admin/blog/add/add.component';
+import { ListComponent } from './components/admin/blog/list/list.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { HomeComponent } from './components/home/home.component';
+import { WorksComponent } from './components/works/works.component';
+
 import { AdminGuard } from './services/guards/admin.guard';
 
 
 const routes: Routes = [
-  
-  {path : "product", canActivate: [AdminGuard] , component: ProductComponent},
   {
-    path : "products", canActivate: [AdminGuard], children:[
-      { path: "", component: ProductsComponent },
-      { path: "add", component: ProductAddComponent },
-      { path: ":id", component: ProductDetailComponent },
-      { path: "edit/:id", component: ProductAddComponent },
+    path: "", component: HomeComponent
+  },
+  {
+    path: "Blogpage", component: BlogComponent
+  },
+  {
+    path: "Workspage", component: WorksComponent
+  },
+  {
+    path: "admin", children:[
+      { path: "blog", children:[
+        { path: "", component: ListComponent },
+        { path: "add", component: AddComponent },
+        { path: "edit/:id", component: AddComponent },
+      ]  },
     ]
   },
-  {path: "signup", component: SignupComponent},
-  {path: "signin", component: SigninComponent},
 ];
 
 @NgModule({

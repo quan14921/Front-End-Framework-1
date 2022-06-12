@@ -1,0 +1,50 @@
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    
+  }
+  .recent-blog{
+    width: 100%;
+    margin: 80px;
+    
+  }
+  .row{
+    display: block;
+    padding: 50px 0;
+  }
+  .title-post {
+    font-size: 44px;
+    font-weight: bold;
+  }
+  .col {
+    display: grid;
+    grid-template-columns: 246px auto;
+    grid-gap: 18px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 15px;
+    padding-top: 30px;
+    width: 690px;
+  }
+  .image{
+    max-width: 246px;
+ }
+  .col .heading-blog{
+    font-size: 30px;
+  }
+  .col a{
+    text-decoration: none;
+    color: #21243D;
+  }
+  .col .date-category{
+    margin: 20px 0;
+    font-size: 20px;
+  }
+  .col .desc{
+    font-size: 16px;
+  }
+  
+  .work-title{
+    font-size: 44px;
+    font-weight: bold;
+  }
+  

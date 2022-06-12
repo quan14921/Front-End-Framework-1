@@ -1,34 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { XyzComponent } from './component/xyz/xyz.component';
-import { ProductComponent } from './component/product/product.component';
-import { HeaderComponent } from './component/header/header.component';
 import { FormsModule } from '@angular/forms';
-import { ProductsComponent } from './component/products/products.component';
-import { ProductAddComponent } from './component/product-add/product-add.component';
-import { ProductDetailComponent } from './component/product-detail/product-detail.component';
-import { HttpClientModule } from '@angular/common/http';
-import { SignupComponent } from './component/signup/signup.component';
+import { HeaderComponent } from './components/header/header.component';
 import { LayoutsAdminComponent } from './layouts/layouts-admin/layouts-admin.component';
 import { LayoutsWedsiteComponent } from './layouts/layouts-wedsite/layouts-wedsite.component';
-import { SigninComponent } from './component/signin/signin.component';
+
+import { HomeComponent } from './components/home/home.component';
+import { BlogComponent } from './components/blog/blog.component';
+import { WorksComponent } from './components/works/works.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { ListComponent } from './components/admin/blog/list/list.component';
+import { AddComponent } from './components/admin/blog/add/add.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    XyzComponent,
-    ProductComponent,
     HeaderComponent,
-    ProductsComponent,
-    ProductAddComponent,
-    ProductDetailComponent,
-    SignupComponent,
     LayoutsAdminComponent,
     LayoutsWedsiteComponent,
-    SigninComponent
+    HomeComponent,
+    BlogComponent,
+    WorksComponent,
+    FooterComponent,
+    ListComponent,
+    AddComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,38 @@
+
+header {
+  height: 100%;
+  font-family: 'Heebo', sans-serif;
+}
+header {
+  line-height: 1.5;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+.container{
+  width: 800px;
+  margin: 0 auto;
+  
+}
+.header-top{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.logo a{
+  display: block;
+  max-width: 100%;
+  font-weight: bold;
+} 
+
+.top-nav ul {
+    display: flex;    
+    justify-content: center;
+  }
+.top-nav ul li{
+  font-size: 20px;
+  list-style: none;
+  padding: 0 20px;
+  font-weight: bold;
+}
